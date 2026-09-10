@@ -4,11 +4,13 @@ let idade = 30;
 let possuiCadastro = true;
 let clienteAtivo = true;
 let saldo = 1000.50;
+let valorCompra = 750.00;
 
 console.log("Nome:", nome);
 console.log("Idade:", idade);
 console.log("Cliente Ativo:", clienteAtivo);
 console.log("Saldo:", saldo);
+console.log("Valor da Compra:", valorCompra);
 
 // Tipos de dados
 console.log("Tipo de nome:", typeof nome);
@@ -50,14 +52,22 @@ function classificarCliente(saldo) {
     return ("Cliente sem saldo");
 }
 }
-let classificacaiCliente = classificarcliente(saldo);
-console.log("Classificação do cliente:", classificacaiCliente);
+let classificacaoCliente = classificarCliente(saldo);
+console.log("Classificação do cliente:", classificacaoCliente);
 
 let podeReceberPromocao = clienteAtivo || possuiCadastro;
 console.log("Pode receber promoção:", podeReceberPromocao);
 
-// Estruturas de controle
-if (compraAutorizada) {
+function autorizarCompra(idade, clienteAtivo, possuiCadastro,saldo, valorCompra ) {
+    if (idade >= 18 && clienteAtivo && possuiCadastro && saldo >= valorCompra) {
+        return true;
+    }
+    return false;
+}
+
+let autorizacao= autorizarCompra(idade, clienteAtivo, possuiCadastro, saldo, valorCompra);    
+
+if (autorizacao) {
     console.log("Compra autorizada.");
 }else{
     console.log("Compra não autorizada.");
