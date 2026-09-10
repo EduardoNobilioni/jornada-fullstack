@@ -18,7 +18,6 @@ console.log("Tipo de idade:", typeof idade);
 console.log("Tipo de clienteAtivo:", typeof clienteAtivo);
 console.log("Tipo de saldo:", typeof saldo);
 
-
 function atualizarSaldo(saldoAtual, valor) {
     saldoAtual += valor;
     return saldoAtual;
