@@ -27,13 +27,22 @@ Fundamentos de JavaScript aplicados na construção das primeiras regras do sist
 
 **Conceitos praticados:**
 
-- Variáveis e tipos de dados
+**Conceitos praticados:**
+
+- Variaveis e tipos de dados
 - Operadores
 - Estruturas condicionais
 - Operadores lógicos
 - Funções
 - Parâmetros e argumentos
 - `return`
+- Escopo de variáveis
+- `let` e `const`
+- Arrays e objetos
+- Métodos básicos de arrays
+- Laços de repetição com `for`
+- Percurso de arrays e arrays de objetos
+- Contadores e filtros com condições
 - Organização de regras de negócio
 
 Status: 🚧 Em desenvolvimento
